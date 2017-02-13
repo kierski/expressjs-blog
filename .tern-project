@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "modules": {},
+    "es_modules": {},
+    "node": {},
+    "node-express": {}
+},
+  "ecmaVersion": 6,
+  "libs": [
+    "browser",
+    "jquery"
+  ]
+}
