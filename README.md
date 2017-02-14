@@ -8,8 +8,6 @@ The power of git + github pages or Heroku. Everything in the terminal. Track cha
 
 ```javascript
 npm install
-gulp build
-gulp watch
 ```
 
 **build and watch**
