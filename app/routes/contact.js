@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
+  res.render('contact', { type: 'page', title: 'Contact' });
 });
 
 // send email

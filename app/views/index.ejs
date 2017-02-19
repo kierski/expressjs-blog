@@ -15,7 +15,7 @@
                         <%= posts[i].subtitle %>
                     </h3>
                 </a>
-                <p class="post-meta">Posted by <a href="#"><%= posts[i].author %></a> on September <%= posts[i].updatedAt %></p>
+                <p class="post-meta">Posted by <a href="/about"><%= posts[i].author %></a> on September <%= posts[i].updatedAt.substring(0, posts[i].updatedAt.indexOf("T") - 1); %></p>
             </div>
           <% } %>
 

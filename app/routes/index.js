@@ -20,6 +20,7 @@ function json2array(json){
 /* GET home page. */
 router.get('/', (req, res, next) => {
   res.render('index', {
+    type: 'page',
     title: 'Home',
     posts: json2array(posts)
   });

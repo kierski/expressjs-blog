@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-var DomParser = require('dom-parser');
-var parser = new DomParser();
 
 var fs = require('fs');
 var posts;
@@ -26,14 +24,19 @@ router.use('/:slug', (req, res, next) => {
 var postsList = json2array(posts);
 
 postsList.forEach((post) => {
+
   if (req.params.slug === post.slug) {
-console.log(parser.parseFromString(post.body, "text/xml"));
+
+    var data = post.updatedAt;
+    data = data.substring(0, data.indexOf("T") - 1);
+
     res.render('post', {
+      type: 'post',
       author: post.author,
       title: post.title,
       subtitle: post.subtitle,
-      article: 'test',
-      when: post.updatedAt
+      article: post.body,
+      when: data
     });
 
   }
