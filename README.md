@@ -4,6 +4,9 @@ simple idea of a small blog, based on [Clean Blog](https://startbootstrap.com/te
 
 The power of git + github pages or Heroku. Everything in the terminal. Track changes, commit and deploy.
 
+**demo (on Heroku)**
+[demo](https://expressjsblog.herokuapp.com/)
+
 **download depending**
 
 ```javascript
@@ -22,6 +25,3 @@ gulp watch
 ```javascript
 npm run post
 ```
-
-
-<!-- https://www.npmjs.com/package/package-merge -->
