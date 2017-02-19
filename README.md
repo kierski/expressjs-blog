@@ -1,13 +1,12 @@
 ## expressjs blog
 
+**[DEMO on heroku](https://expressjsblog.herokuapp.com/)**
+
 simple idea of a small blog, based on [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) and the node/express, it uses templates ejs, gulp as a compiler, nodemailer to send mails.
 
 The power of git + github pages or Heroku. Everything in the terminal. Track changes, commit and deploy.
 
-**demo (on Heroku)**
-[demo](https://expressjsblog.herokuapp.com/)
-
-**download depending**
+**download dependencies**
 
 ```javascript
 npm install
