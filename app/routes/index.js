@@ -8,11 +8,20 @@ fs.readFile('app/data/blog.json', 'utf-8', (err, data) => {
   posts = JSON.parse(data);
 });
 
+function json2array(json){
+    var result = [];
+    var keys = Object.keys(json);
+    keys.forEach(function(key){
+        result.push(json[key]);
+    });
+    return result;
+}
+
 /* GET home page. */
 router.get('/', (req, res, next) => {
   res.render('index', {
     title: 'Home',
-    posts: posts
+    posts: json2array(posts)
   });
 });
 

@@ -24,3 +24,6 @@ gulp watch
 ```javascript
 npm run post
 ```
+
+
+<!-- https://www.npmjs.com/package/package-merge -->
